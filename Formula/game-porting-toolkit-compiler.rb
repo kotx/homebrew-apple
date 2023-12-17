@@ -27,9 +27,8 @@ class GamePortingToolkitCompiler < Formula
   keg_only :provided_by_macos
   
   def install
-    # The 22.1.1 tarball contains an empty sources/freetype directory, which confuses Homebrew.
-    # So we extract it ourself. This also lets us restrict extraction to just the clang directory.
-    system "tar", "-xf", "crossover-sources-22.1.1.tar.gz", "--include=sources/clang/*", "--strip-components=2"
+    # Extract it ourselves, this lets us restrict extraction to just the clang directory.
+    system "tar", "-xf", "crossover-sources-23.7.1.tar.gz", "--include=sources/clang/*", "--strip-components=2"
     
     mkdir "clang-build" do
       # Build an x86_64-native clang.
