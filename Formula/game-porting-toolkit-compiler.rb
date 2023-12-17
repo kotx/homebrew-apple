@@ -14,11 +14,11 @@
 # OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 class GamePortingToolkitCompiler < Formula
-  version "0.1"
+  version "0.2"
   desc "Compiler for Apple Game Porting Toolkit"
   homepage "https://developer.apple.com/"
-  url "https://media.codeweavers.com/pub/crossover/source/crossover-sources-22.1.1.tar.gz", using: :nounzip
-  sha256 "cdfe282ce33788bd4f969c8bfb1d3e2de060eb6c296fa1c3cdf4e4690b8b1831"
+  url "https://media.codeweavers.com/pub/crossover/source/crossover-sources-23.7.1.tar.gz", using: :nounzip
+  sha256 "aa85487b0c80c97a0ddb8a8b9aaab1a720772af275af92d9997dded2bd15bf15"
   # license ""
   
   depends_on "cmake" => :build
